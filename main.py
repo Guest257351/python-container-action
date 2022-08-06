@@ -4,7 +4,7 @@ import requests
 
 def main():
     with open(os.environ['GITHUB_EVENT_PATH'], 'r') as f:
-        commits = f.read().commits
+        print(f.read())
     commits = os.environ["GITHUB_EVENT_COMMITS"]
 
     version = os.environ["GITHUB_RUN_ID"]
