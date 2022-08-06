@@ -1,11 +1,11 @@
 import os
 import requests
-import json
+import json as js
 
 
 def main():
     with open(os.environ['GITHUB_EVENT_PATH'], 'r') as f:
-        commits = json.loads(f.read())['commits']
+        commits = js.loads(f.read())['commits']
 
     version = os.environ["GITHUB_RUN_ID"]
 
