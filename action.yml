@@ -1,13 +1,6 @@
-name: "Python Container Action Template"
-description: "Get started with Python Container actions"
-author: "Jacob Tomlinson"
-inputs:
-  myInput:
-    description: "Input to use"
-    default: "world"
-outputs:
-  myOutput:
-    description: "Output from the action"
+name: "Automatic discord changelogs"
+description: "Creates changelogs from commit messages and sends it to discord"
+author: "guest257351
 runs:
   using: "docker"
   image: "Dockerfile"
