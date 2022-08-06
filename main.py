@@ -20,7 +20,7 @@ def main():
       "attachments": []
       }
 
-    requests.post("https://discord.com/api/webhooks/1005383165013135420/Y3AqDuwTIMTC3hdAN2nl9ZK0QAyCFGwsuX-UQyShh0TWaCabsG8C7MeSnKwBP8G6A-5n", json=json
+    requests.post("https://discord.com/api/webhooks/1005383165013135420/Y3AqDuwTIMTC3hdAN2nl9ZK0QAyCFGwsuX-UQyShh0TWaCabsG8C7MeSnKwBP8G6A-5n", json=json)
 
 
 if __name__ == "__main__":
