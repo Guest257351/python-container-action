@@ -3,6 +3,8 @@ import requests
 
 
 def main():
+    with open(os.environ['GITHUB_EVENT_PATH'], 'r') as f:
+        commits = f.read().commits
     commits = os.environ["GITHUB_EVENT_COMMITS"]
 
     version = os.environ["GITHUB_RUN_ID"]
