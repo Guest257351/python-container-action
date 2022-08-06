@@ -7,11 +7,11 @@ def main():
     with open(os.environ['GITHUB_EVENT_PATH'], 'r') as f:
         commits = js.loads(f.read())['commits']
 
-    version = os.environ["GITHUB_RUN_ID"]
+    version = os.environ["GITHUB_RUN_NUMBEr"]
 
     messages = '\n'.join([i['message'] for i in commits])
 
-    changelog = f"""Version {version}
+    changelog = f"""Version `{version}`
 ```md
 {messages}
 ```
