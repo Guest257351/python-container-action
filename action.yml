@@ -1,6 +1,6 @@
 name: "Automatic discord changelogs"
 description: "Creates changelogs from commit messages and sends it to discord"
-author: "guest257351
+author: "guest257351"
 runs:
   using: "docker"
   image: "Dockerfile"
