@@ -9,7 +9,7 @@ def main():
 
     version = os.environ["GITHUB_RUN_ID"]
 
-    messages = '\n'.join([i.message for i in commits])
+    messages = '\n'.join([i['message'] for i in commits])
 
     changelog = f"""Version {version}
 ```md
