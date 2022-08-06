@@ -18,7 +18,7 @@ def main():
 """
     json = {
       "content": changelog,
-      "embeds": null,
+      "embeds": None,
       "attachments": []
       }
 
